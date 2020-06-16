@@ -12,22 +12,31 @@ function moreAboutHome(address, distanceFromTown, hasNeighbours) {
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
+// function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
+//     var one = (typeof (parents) === 'string');
+//     if (one === true)
+//         console.log("true");
+//     else
+//         console.log("false");
+//     var two = (typeof (noOfSiblings) === 'number');
+//     if (two === true)
+//         console.log("true");
+//     else
+//         console.log("false");
+//     var three = (typeof (isNuclearFamily) === 'boolean');
+//     if (three === true)
+//         console.log("true");
+//     else
+//         console.log("false");
+// }
 function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
-    var one = (typeof (parents) === 'string');
-    if (one === true)
-        console.log("true");
-    else
-        console.log("false");
-    var two = (typeof (noOfSiblings) === 'number');
-    if (two === true)
-        console.log("true");
-    else
-        console.log("false");
-    var three = (typeof (isNuclearFamily) === 'boolean');
-    if (three === true)
-        console.log("true");
-    else
-        console.log("false");
+    var parents, noOfSiblings, isNuclearFamily;
+    if (typeof (parents) == "string" && typeof (isNuclearFamily) == "boolean") {
+        var Check = true;
+        return Check && Number.isInteger(noOfSiblings);
+    } else {
+        return false;
+    }
 }
 
 //Progression 3:
@@ -76,22 +85,24 @@ function convertToCelsius(fahrenheit) {
 //Given a value, return which of these above actions Lily would take
 function aDifficultChoice(choice) {
     switch (choice) {
-        case '1':
-            return choice;
-            // console.log("Take her daughter to a doctor");
+        case 1:
+            // return choice;
+            console.log("Take her daughter to a doctor");
             break;
-        case '2':
-            return choice;
-            // console.log("Talk to her husband about it");
+        case 2:
+            // return choice;
+            console.log("Talk to her husband about it");
             break;
-        case '3':
-            return choice;
-            // console.log("Counsel her daughter herself");
+        case 3:
+            // return choice;
+            console.log("Counsel her daughter herself");
             break;
-        case '4':
-            return choice;
-            // console.log("Lock her daughter in her room");
+        case 4:
+            // return choice;
+            console.log("Lock her daughter in her room");
             break;
+        default:
+            console.log("invalid input");
     }
 }
 
